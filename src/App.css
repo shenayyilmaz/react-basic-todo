@@ -12,3 +12,16 @@ a {
   color: #333;
   text-decoration: none;
 }
+
+.btn {
+  display: inline-block;
+  background: #666;
+  color: white;
+  margin: 0 5px;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+}
+.container {
+  margin: 0 1rem;
+}
