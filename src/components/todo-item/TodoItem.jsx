@@ -25,9 +25,9 @@ const TotoItem = ({ todo, markComplete, deleteTodo }) => {
 };
 
 //PropType
-TotoItem.propTypes = {
-  todo: PropTypes.object.isRequired,
-};
+// TotoItem.propTypes = {
+//   todo: PropTypes.object.isRequired,
+// };
 
 const btnStyle = {
   background: "#ccc",
