@@ -8,6 +8,8 @@ import AddTodo from "./components/add-todo/AddTodo";
 import About from "./pages/about/About";
 import "./App.css";
 
+// hooks
+import UseStateExample from "./components/hooks/UseStateExample";
 class App extends Component {
   state = {
     todos: [],
@@ -69,6 +71,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <h1>APP component</h1>
+          <UseStateExample />
           <div className="container">
             <Header />
             <Route
