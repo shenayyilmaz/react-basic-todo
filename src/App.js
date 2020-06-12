@@ -18,6 +18,13 @@ class App extends Component {
       "https://jsonplaceholder.typicode.com/todos?_limit=5"
     );
     this.setState({ todos: res.data });
+
+    //SIMULTANEOUS DATA
+    const res1 = await axios.all([
+      axios.get("https://jsonplaceholder.typicode.com/todos?_limit=5"),
+      axios.get("https://jsonplaceholder.typicode.com/posts?_limit=5"),
+    ]);
+    console.log("todos", res1[0]);
   };
   // Toggle Complete
   markComplete = async (id) => {
@@ -28,7 +35,6 @@ class App extends Component {
     //   }
     // );
 
-    console.log(res.data);
     const todos = this.state.todos.map((todo) =>
       todo.id === id ? { ...todo, completed: !todo.completed } : todo
     );
