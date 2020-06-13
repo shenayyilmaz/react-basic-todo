@@ -10,6 +10,8 @@ import "./App.css";
 
 // hooks
 import UseStateExample from "./components/hooks/UseStateExample";
+import UseEffectExample from "./components/hooks/UseEffectExample";
+
 class App extends Component {
   state = {
     todos: [],
@@ -71,7 +73,8 @@ class App extends Component {
       <Router>
         <div className="App">
           <h1>APP component</h1>
-          <UseStateExample />
+          {/* <UseStateExample /> */}
+          <UseEffectExample />
           <div className="container">
             <Header />
             <Route
